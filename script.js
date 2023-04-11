@@ -16,11 +16,11 @@ function getSeconds() {
     let t = getInfo().time;
     if (t.length != 8) {
         alert("Please fill it out according to the format. \n ex) 03:16:54, 00:18:54")
-        window.location.reload()
+        // window.location.reload()
         return;
     } else if (t.substring(2, 3) != ":" || t.substring(5, 6) != ":") {
         alert("Please fill it out according to the format. \n ex) 03:16:54, 00:18:54")
-        window.location.reload()
+        // window.location.reload()
         return;
     }
     let hour = t.substring(0, 2);
@@ -45,7 +45,7 @@ function getPoints() {
     let points = Math.round(Formula(distance, seconds));
     if (isNaN(points)) {
         alert("Please fill it out according to the format. \n ex) 03:16:54, 00:18:54")
-        window.location.reload()
+        // window.location.reload()
     }
     calcEquivalents(points)
 }
